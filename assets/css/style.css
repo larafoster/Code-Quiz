@@ -21,6 +21,9 @@ header {
    justify-content: space-between;
    align-items: flex-end;
 }
+#timer{
+  width: fit-content;
+}
 article {
   display: flex;
   flex-wrap: wrap;
