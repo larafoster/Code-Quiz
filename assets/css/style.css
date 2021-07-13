@@ -20,6 +20,8 @@ header {
   display: flex;
    justify-content: space-between;
    align-items: flex-end;
+   font-size: 1.65rem;
+   color: white;
 }
 #timer{
   width: fit-content;
@@ -48,12 +50,13 @@ section p {
     height: 10vh;
   }
   header, footer, article {
-    padding: 2em;
+    padding: 1em;
   }
 
 footer {
 display: flex;
 justify-content: center;
+
 }
 
 footer {
@@ -68,4 +71,12 @@ footer a:hover {
 }
   /* Classes */
 
+.high-scores a {
+ text-decoration: none;
+color: white;
+}
 
+.high-scores a:hover {
+ text-decoration: none;
+opacity: 70%;
+}
