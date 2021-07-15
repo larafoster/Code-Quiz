@@ -13,30 +13,67 @@
     ></script>
   </head>
   <body>
-    <header>
-      <div class="high-scores">
-      <i class="fas fa-arrow-right fa-xs"></i>  <a href="./pages/high-scores/" > View High Scores </a><i class="fas fa-arrow-left fa-xs"></i>
-      </div>
-      <h3 id="timer">Time Left: </h3>
-     
-    </header>
-    <div id="main">
-      <article>
-        <h1>Coding Quiz Challenge</h1>
-        <section>
-        <div class = "row">
-        <p>
-          Try to answer the following code-related questions within the time
-          limit. Keep in mind that incorrect answers will penalize your
-          score/time by ten seconds.
-        </p>
-        </div>
-       
-        
-         </section>
-      </article>
+
+<div id="topControls">
+  <div id="top-bar">
+    <button id="scoreTotal" href="">View High Scores</button>
+    <div id="timer"><p>Time: <span id="time">0</span></p></div>
+  </div>
+</div>
+  
+
+<div id="wrapper">
+  <section class="flexit" id="start">
+    <h1>Coding Quiz Challenge</h1>
+    <p class="center">
+    Try to answer the following code-related questions within the time limit.
+      Keep in mind that incorrect answers will penalize your score/time by ten seconds.
+    </p>
+    <button>Start Quiz</button>
+
+  </section>
+
+  <section id="quizMain" class="hide">
+  <div class="container quiz-flexit">
+    <p id="questTitle"></p>
+    <!-- Buttons to accept question values-->
+    <button></button>
+    <button></button>
+    <button></button>
+    <button></button>
+    <div id="answerCheck" class="invisible">
+      <p>&nbsp;</p>
+    </div></div>
+  </section>
+
+  <section id="quizOver" class="hide">
+  <div class="container flexit">
+    <h1>Quiz Over</h1>
+    <p>Your final score is&nbsp;<span id="score"></span></p>
+    <div id="highScoreBtn">
+    <p>If you would like to add your score to the HIGH SCORES, enter your initials.</p>
+    <div class="submit-initial">
+     <p class="padding-right">Your Initials: </p><input id="userInitials" type="text"> <button>Submit</button>
     </div>
-    <span> Created by </span> <a href="https://github.com/larafoster/Code-Quiz" target="_blank" > Lara Foster </a> </footer>
+     
+    </div>
+     <div class="container flexit"></div>
+    <div id="postScore" class="invisible">
+      <p>&nbsp;</p>
+    </div>
+    </div></div>
+  </section>
+     <div class="container flexit"></div>
+  <section id="highScores" class="hide">
+    <h1>High Scores</h1>
+    <div>
+</div>
+    </div>
+    <button id="playAgain">Play Again</button> <button id="clearScores">Clear Highscores</button>
+  </section>
+</div>
+ 
+
     <script src="./assets/js/questions.js"></script>
     <script src="./assets/js/script.js"></script>
   </body>
