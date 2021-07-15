@@ -1,11 +1,11 @@
 var questions = [
     {
-      questTitle: "Which tag is an extension to HTML that can enclose any number of JavaScript",
+      questTitle: "Which tag is an extension to HTML that can enclose any number of JavaScript?",
       choices: ["SCRIPT", "BODY", "HEAD", "TITLE"],
       answer: "SCRIPT"
     },
     {
-      questTitle: "Which method of an Array object adds and/or removes elements from an array.",
+      questTitle: "Which method of an Array object adds and/or removes elements from an array?",
       choices: ["Reverse", "Shift", "Slice", "Splice"],
       answer: "Splice"
     },
