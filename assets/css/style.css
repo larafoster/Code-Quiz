@@ -50,6 +50,10 @@ button:hover {
   color: white;
 }
 
+.blue {
+  color: #47C8F0;
+  font-weight: 600;
+}
 .container {
   display: flex;
   flex-flow: column wrap;
