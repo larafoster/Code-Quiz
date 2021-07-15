@@ -21,3 +21,20 @@
     });
     queryElement (element).classList.remove ('hide');
   };
+
+  // Displaying the quiz question with item number
+  var displayQuestion = () => {
+    queryElement ('#quizMain p').innerHTML = questions[questCount].questTitle;
+    queryElement (
+      '#quizMain button:nth-of-type(1)'
+    ).innerHTML = `1. ${questions[questCount].choices[0]}`;
+    queryElement (
+      '#quizMain button:nth-of-type(2)'
+    ).innerHTML = `2. ${questions[questCount].choices[1]}`;
+    queryElement (
+      '#quizMain button:nth-of-type(3)'
+    ).innerHTML = `3. ${questions[questCount].choices[2]}`;
+    queryElement (
+      '#quizMain button:nth-of-type(4)'
+    ).innerHTML = `4. ${questions[questCount].choices[3]}`;
+  };
