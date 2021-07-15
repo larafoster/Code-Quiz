@@ -60,6 +60,7 @@ button:hover {
   align-content: flex-start;
   margin-top: 10px;
   min-width: 600px;
+  text-align: left;
 }
 
 #answerCheck, #postScore {
@@ -215,7 +216,7 @@ input {
   }
   #quizMain button {
     display: flex;
-    align-content: flex-start;
+    justify-content: flex-start;
     margin-top: 10px;
     min-width: 400px;
   }

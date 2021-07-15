@@ -1,35 +1,23 @@
-// created an array for the questions, options, and answers
-var questions = [
-    {
-      title: "Which tag is an extension to HTML that can enclose any number of JavaScript",
-      choices: ["SCRIPT", "BODY", "HEAD", "TITLE"],
-      answer: "SCRIPT"
-    },
-    {
-      title: "Which method of an Array object adds and/or removes elements from an array.",
-      choices: ["Reverse", "Shift", "Slice", "Splice"],
-      answer: "Splice"
-    },
-    {
-      title: "Which of these is not used to loop?",
-      choices: ["for", "while", "foreach", "sequence"],
-      answer: "sequence"
-    },
-    {
-      title: "Which of the following cannot be done with client-side JavaScript?",
-      choices: ["Validating a form", "Sending a form's contents by email", "Storing the form's contents to a database file on the server", "Responding to user events such as mouse clicks"],
-      answer: "Storing the form's contents to a database file on the server"
-    },
-    {
-      title: "Which of the following are capabilities of functions in JavaScript?",
-      choices: ["Return a value", "Accept parameters and Return a value", "Accept parameters", "None of the above"],
-      answer: "Accept parameters"
-    },
-   
-  ];
+ document.addEventListener ('DOMContentLoaded', event => {
+  //Global variables
+  var startTime = 75;
+  var time = 75;
+  var score = 0;
+  var questCount = 0;
+  var timeset;
+  var answers = document.querySelectorAll ('#quizMain button');
+ 
+  // Set querySelector() to return the first Element within the document that matches the specified selector, or group of selectors.
 
-  
-  var highScore = []; //Array containing user scores
-  var questionCounter = 0; //Tracks question number
-  var selections = []; //Array containing user choices
-  var quiz = $('#quiz'); //Quiz div object
+  var queryElement = element => {
+    return document.querySelector (element);
+  };
+
+  // Hide sections until they are called
+  var onlyDisplaySection = element => {
+    var sections = document.querySelectorAll ('section');
+    Array.from (sections).forEach (userItem => {
+      userItem.classList.add ('hide');
+    });
+    queryElement (element).classList.remove ('hide');
+  };
